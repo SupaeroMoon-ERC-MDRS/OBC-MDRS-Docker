@@ -7,5 +7,5 @@
   ],
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
-  "remoteUser": "ubuntu"
+  "remoteUser": "root"
 }
