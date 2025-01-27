@@ -13,13 +13,13 @@ ENV ROS_PYTHON_VERSION=3
 ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt install software-properties-common -y
-RUN add-apt-repository universe
+RUN sudo apt install software-properties-common
+RUN sudo add-apt-repository universe
 
-RUN apt update && apt upgrade -y
+RUN sudo apt update && sudo apt upgrade -y
 
-RUN apt install ros-humble-ros-base -y
-RUN apt install ros-dev-tools -y
+RUN sudo apt install ros-humble-ros-base -y
+RUN sudo apt install ros-dev-tools -y
 
 RUN sudo apt-get install -y python3-colcon-common-extensions 
 RUN sudo apt-get install -y ros-humble-rviz2
