@@ -13,8 +13,8 @@ ENV ROS_PYTHON_VERSION=3
 ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt install software-properties-common
-RUN add-apt-repository universe
+RUN apt install software-properties-common -y
+RUN add-apt-repository universe -y
 
 RUN apt update && apt upgrade -y
 
