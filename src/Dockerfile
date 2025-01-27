@@ -1,4 +1,4 @@
-FROM ubuntu:jammy 
+FROM ubuntu:jammy
 
 RUN locale  # check for UTF-8
 RUN apt update && apt install locales -y
@@ -55,7 +55,7 @@ RUN sudo mkdir -p /workspace
 WORKDIR /workspace
 
 COPY entrypoint.sh /entrypoint.sh
-COPY bashrc /home/${USERNAME}/.bashrc
+COPY bashrc /home/root/.bashrc
 
 
 # Set up entrypoint and default command
