@@ -45,8 +45,8 @@ RUN apt-get install python3-rosdep
 RUN apt install -y git
 
 # Rosdep update
-RUN rosdep init
-RUN rosdep update
+# RUN rosdep init
+# RUN rosdep update
 
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
