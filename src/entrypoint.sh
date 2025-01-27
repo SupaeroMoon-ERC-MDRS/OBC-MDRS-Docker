@@ -6,4 +6,6 @@ source /opt/ros/humble/setup.bash
 
 echo "Provided arguments: $@"
 
-exec $@
+exec "$@"
+
+echo "Ran bash"
