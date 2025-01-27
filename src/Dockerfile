@@ -32,11 +32,9 @@ RUN apt-get install -y ros-humble-controller-manager
 RUN apt-get install -y ros-humble-robot-state-publisher
 RUN apt-get install -y ros-humble-joint-state-publisher
 RUN apt-get install -y ros-humble-joint-state-publisher-gui
-RUN apt-get install -y ros-humble-gazebo-ros-pkgs
 RUN apt-get install -y ros-humble-trajectory-msgs
 RUN apt-get install -y ros-humble-velocity-controllers
 RUN apt-get install -y ros-humble-joint-trajectory-controller
-RUN apt-get install -y ros-humble-gazebo-ros2-control-demos
 RUN apt-get install -y ros-humble-teleop-tools 
 RUN apt-get install -y ros-humble-key-teleop
 RUN apt-get install -y ros-humble-tf-transformations
