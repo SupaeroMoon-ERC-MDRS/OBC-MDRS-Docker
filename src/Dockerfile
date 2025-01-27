@@ -38,7 +38,8 @@ RUN apt-get install -y ros-humble-joint-trajectory-controller
 RUN apt-get install -y ros-humble-teleop-tools 
 RUN apt-get install -y ros-humble-key-teleop
 RUN apt-get install -y ros-humble-tf-transformations
-RUN apt-get install -y ros-humble-xacro    
+RUN apt-get install -y ros-humble-xacro
+RUN apt-get install python3-rosdep
 
 # Install Git
 RUN apt install -y git
