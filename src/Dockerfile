@@ -39,7 +39,9 @@ RUN apt-get install -y ros-humble-teleop-tools
 RUN apt-get install -y ros-humble-key-teleop
 RUN apt-get install -y ros-humble-tf-transformations
 RUN apt-get install -y ros-humble-xacro
-RUN apt-get install python3-rosdep
+RUN apt-get install -y python3-rosdep
+RUN apt-get install -y python3-pip
+RUN pip3 install adafruit-circuitpython-servokit
 
 # Install Git
 RUN apt install -y git
