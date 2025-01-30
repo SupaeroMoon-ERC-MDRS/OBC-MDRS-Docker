@@ -8,9 +8,18 @@ services:
     container_name: rasp
     platform: linux/arm64 # Delete if not on Raspberry Pi or Apple Silicon MACs
     tty: true
-    network_mode: host  # Shares the same NAT as the host
+    network_mode: host # Shares the same NAT as the host
     restart: unless-stopped
 
+    volumes:
+      - type: bind
+        source: ~/Documents/OBC-MDRS-RPI
+        target: ~/Documents/OBC-MDRS-RPI
+      - type: bind
+        source: ~/Documents/comms
+        target: ~/Documents/comms
+    #ports:
+    #  - "12121:12121"
     # Enable GUI for Apple Silicon MACs
     # environment:
     #   - DISPLAY=host.docker.internal:0
