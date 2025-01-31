@@ -42,6 +42,10 @@ RUN apt-get install -y ros-humble-xacro
 RUN apt-get install -y python3-rosdep
 RUN apt-get install -y python3-pip
 RUN pip3 install adafruit-circuitpython-servokit
+RUN apt install iproute2
+
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
 
 # Install Git
 RUN apt install -y git
